@@ -1,0 +1,311 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		142B6EA61BF6CAF000BE7F13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142B6EA51BF6CAF000BE7F13 /* AppDelegate.swift */; };
+		142B6EA81BF6CAF000BE7F13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142B6EA71BF6CAF000BE7F13 /* ViewController.swift */; };
+		142B6EAB1BF6CAF000BE7F13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142B6EA91BF6CAF000BE7F13 /* Main.storyboard */; };
+		142B6EAD1BF6CAF000BE7F13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 142B6EAC1BF6CAF000BE7F13 /* Assets.xcassets */; };
+		142B6EB01BF6CAF000BE7F13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142B6EAE1BF6CAF000BE7F13 /* LaunchScreen.storyboard */; };
+		142B6EB81BF6CB6F00BE7F13 /* EstimoteSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 142B6EB71BF6CB6F00BE7F13 /* EstimoteSDK.framework */; };
+		142B6EC11BF7EDD900BE7F13 /* RailsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142B6EC01BF7EDD900BE7F13 /* RailsRequest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		142B6EA21BF6CAF000BE7F13 /* WorkTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		142B6EA51BF6CAF000BE7F13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		142B6EA71BF6CAF000BE7F13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		142B6EAA1BF6CAF000BE7F13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		142B6EAC1BF6CAF000BE7F13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		142B6EAF1BF6CAF000BE7F13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		142B6EB11BF6CAF000BE7F13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		142B6EB71BF6CB6F00BE7F13 /* EstimoteSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EstimoteSDK.framework; sourceTree = "<group>"; };
+		142B6EB91BF6CBDF00BE7F13 /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
+		142B6EC01BF7EDD900BE7F13 /* RailsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RailsRequest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		142B6E9F1BF6CAF000BE7F13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				142B6EB81BF6CB6F00BE7F13 /* EstimoteSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		142B6E991BF6CAF000BE7F13 = {
+			isa = PBXGroup;
+			children = (
+				142B6EA41BF6CAF000BE7F13 /* WorkTracker */,
+				142B6EA31BF6CAF000BE7F13 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		142B6EA31BF6CAF000BE7F13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				142B6EA21BF6CAF000BE7F13 /* WorkTracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		142B6EA41BF6CAF000BE7F13 /* WorkTracker */ = {
+			isa = PBXGroup;
+			children = (
+				142B6EA51BF6CAF000BE7F13 /* AppDelegate.swift */,
+				142B6EA71BF6CAF000BE7F13 /* ViewController.swift */,
+				142B6EA91BF6CAF000BE7F13 /* Main.storyboard */,
+				142B6EAC1BF6CAF000BE7F13 /* Assets.xcassets */,
+				142B6EAE1BF6CAF000BE7F13 /* LaunchScreen.storyboard */,
+				142B6EB11BF6CAF000BE7F13 /* Info.plist */,
+				142B6EB91BF6CBDF00BE7F13 /* Bridge.h */,
+				142B6EC01BF7EDD900BE7F13 /* RailsRequest.swift */,
+				142B6EB71BF6CB6F00BE7F13 /* EstimoteSDK.framework */,
+			);
+			path = WorkTracker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		142B6EA11BF6CAF000BE7F13 /* WorkTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 142B6EB41BF6CAF000BE7F13 /* Build configuration list for PBXNativeTarget "WorkTracker" */;
+			buildPhases = (
+				142B6E9E1BF6CAF000BE7F13 /* Sources */,
+				142B6E9F1BF6CAF000BE7F13 /* Frameworks */,
+				142B6EA01BF6CAF000BE7F13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WorkTracker;
+			productName = WorkTracker;
+			productReference = 142B6EA21BF6CAF000BE7F13 /* WorkTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		142B6E9A1BF6CAF000BE7F13 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Alex Oh";
+				TargetAttributes = {
+					142B6EA11BF6CAF000BE7F13 = {
+						CreatedOnToolsVersion = 7.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 142B6E9D1BF6CAF000BE7F13 /* Build configuration list for PBXProject "WorkTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 142B6E991BF6CAF000BE7F13;
+			productRefGroup = 142B6EA31BF6CAF000BE7F13 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				142B6EA11BF6CAF000BE7F13 /* WorkTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		142B6EA01BF6CAF000BE7F13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				142B6EB01BF6CAF000BE7F13 /* LaunchScreen.storyboard in Resources */,
+				142B6EAD1BF6CAF000BE7F13 /* Assets.xcassets in Resources */,
+				142B6EAB1BF6CAF000BE7F13 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		142B6E9E1BF6CAF000BE7F13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				142B6EA81BF6CAF000BE7F13 /* ViewController.swift in Sources */,
+				142B6EA61BF6CAF000BE7F13 /* AppDelegate.swift in Sources */,
+				142B6EC11BF7EDD900BE7F13 /* RailsRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		142B6EA91BF6CAF000BE7F13 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				142B6EAA1BF6CAF000BE7F13 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		142B6EAE1BF6CAF000BE7F13 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				142B6EAF1BF6CAF000BE7F13 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		142B6EB21BF6CAF000BE7F13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		142B6EB31BF6CAF000BE7F13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		142B6EB51BF6CAF000BE7F13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "/Users/alexoh/desktop/_resources/Frameworks/**";
+				INFOPLIST_FILE = WorkTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = alexoh.WorkTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_NAME)/Bridge.h";
+			};
+			name = Debug;
+		};
+		142B6EB61BF6CAF000BE7F13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "/Users/alexoh/desktop/_resources/Frameworks/**";
+				INFOPLIST_FILE = WorkTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = alexoh.WorkTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_NAME)/Bridge.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		142B6E9D1BF6CAF000BE7F13 /* Build configuration list for PBXProject "WorkTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				142B6EB21BF6CAF000BE7F13 /* Debug */,
+				142B6EB31BF6CAF000BE7F13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		142B6EB41BF6CAF000BE7F13 /* Build configuration list for PBXNativeTarget "WorkTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				142B6EB51BF6CAF000BE7F13 /* Debug */,
+				142B6EB61BF6CAF000BE7F13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 142B6E9A1BF6CAF000BE7F13 /* Project object */;
+}
