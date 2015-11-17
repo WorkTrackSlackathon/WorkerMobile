@@ -80,10 +80,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ESTBeaconManagerDelegate 
 
     func beaconManager(manager: AnyObject, didStartMonitoringForRegion region: CLBeaconRegion) {
         
+        print(region.identifier)
+        
         
     }
     
     func beaconManager(manager: AnyObject, didEnterRegion region: CLBeaconRegion) {
+        
+        print(region.identifier)
         
     
     }

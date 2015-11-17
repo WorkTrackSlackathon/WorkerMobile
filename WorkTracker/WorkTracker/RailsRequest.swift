@@ -16,7 +16,7 @@ let _d = NSUserDefaults.standardUserDefaults()
 
 class RailsRequest: NSObject {
     
-    
+    var email: String?
     
     class func session() -> RailsRequest { return _rr }
     
@@ -33,9 +33,10 @@ class RailsRequest: NSObject {
     
     
     private let base = "http://enigmatic-tundra-6262.herokuapp.com/"
-    func loginWithUsername(email: String, andPassword password: String) {
+    func loginWithUsername(email: String, andPassword password: String, success: (Bool) -> ()) {
         
         var info = RequestInfo()
+        self.email = email
         
         info.endpoint = "login"
         info.method = .POST
@@ -48,57 +49,17 @@ class RailsRequest: NSObject {
         
         requestWithInfo(info) { (returnedInfo) -> () in
             
-            
             if let user = returnedInfo?["user"] as? [String:AnyObject] {
                 
                 if let key = user["auth_token"] as? String {
                     
                     self.token = key
-                    
-                    print(self.token)
-                    
+                    success(true)
                 }
-            }
-            
-        }
-        
-    }
-    
-
-    
-    func registerWithUsername(username: String, andPassword password: String, fullname: String, email: String) {
-        var info = RequestInfo()
-        
-        info.endpoint = "/signup"
-        info.method = .POST
-        info.parameters = [
-            
-            
-            "username" : username,
-            "full_name" : fullname,
-            "email" : email,
-            "password" : password
-            
-        ]
-        
-        requestWithInfo(info) { (returnedInfo) -> () in
-            
-            
-            
-            
-            // here we grab the access token & user id in cards table view controller ,
-            
-            if let user = returnedInfo?["user"] as? [String:AnyObject] {
+            } else {
                 
-                if let key = user["auth_token"] as? String {
-                    
-                    self.token = key
-                    
-                    print(self.token)
-                }
+                success(false)
             }
-            
-            
             
         }
         
@@ -169,12 +130,15 @@ class RailsRequest: NSObject {
             if let data = data {
                 
                 // have data
+                dispatch_async(dispatch_get_main_queue(), {
+                    //Code that presents or dismisses a view controller here
+                    if let returnedInfo = try? NSJSONSerialization.JSONObjectWithData(data, options: .MutableContainers) {
+                        
+                        completion(returnedInfo: returnedInfo)
+                        
+                    }
+                })
                 
-                if let returnedInfo = try? NSJSONSerialization.JSONObjectWithData(data, options: .MutableContainers) {
-                    
-                    completion(returnedInfo: returnedInfo)
-                    
-                }
                 
             } else {
                 

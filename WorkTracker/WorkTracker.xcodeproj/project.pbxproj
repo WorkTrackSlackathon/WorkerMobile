@@ -9,24 +9,28 @@
 /* Begin PBXBuildFile section */
 		142B6EA61BF6CAF000BE7F13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142B6EA51BF6CAF000BE7F13 /* AppDelegate.swift */; };
 		142B6EA81BF6CAF000BE7F13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142B6EA71BF6CAF000BE7F13 /* ViewController.swift */; };
-		142B6EAB1BF6CAF000BE7F13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142B6EA91BF6CAF000BE7F13 /* Main.storyboard */; };
 		142B6EAD1BF6CAF000BE7F13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 142B6EAC1BF6CAF000BE7F13 /* Assets.xcassets */; };
 		142B6EB01BF6CAF000BE7F13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142B6EAE1BF6CAF000BE7F13 /* LaunchScreen.storyboard */; };
 		142B6EB81BF6CB6F00BE7F13 /* EstimoteSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 142B6EB71BF6CB6F00BE7F13 /* EstimoteSDK.framework */; };
 		142B6EC11BF7EDD900BE7F13 /* RailsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142B6EC01BF7EDD900BE7F13 /* RailsRequest.swift */; };
+		14D7F99A1BF8E60A00233D62 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D7F9991BF8E60A00233D62 /* Login.storyboard */; };
+		14D7F99C1BF8E74800233D62 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D7F99B1BF8E74800233D62 /* LoginController.swift */; };
+		14D7F99E1BF8F62200233D62 /* wkrStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D7F99D1BF8F62200233D62 /* wkrStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		142B6EA21BF6CAF000BE7F13 /* WorkTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		142B6EA51BF6CAF000BE7F13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		142B6EA71BF6CAF000BE7F13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		142B6EAA1BF6CAF000BE7F13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		142B6EAC1BF6CAF000BE7F13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		142B6EAF1BF6CAF000BE7F13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		142B6EB11BF6CAF000BE7F13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		142B6EB71BF6CB6F00BE7F13 /* EstimoteSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EstimoteSDK.framework; sourceTree = "<group>"; };
 		142B6EB91BF6CBDF00BE7F13 /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
 		142B6EC01BF7EDD900BE7F13 /* RailsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RailsRequest.swift; sourceTree = "<group>"; };
+		14D7F9991BF8E60A00233D62 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		14D7F99B1BF8E74800233D62 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		14D7F99D1BF8F62200233D62 /* wkrStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = wkrStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,15 +66,25 @@
 			children = (
 				142B6EA51BF6CAF000BE7F13 /* AppDelegate.swift */,
 				142B6EA71BF6CAF000BE7F13 /* ViewController.swift */,
-				142B6EA91BF6CAF000BE7F13 /* Main.storyboard */,
-				142B6EAC1BF6CAF000BE7F13 /* Assets.xcassets */,
-				142B6EAE1BF6CAF000BE7F13 /* LaunchScreen.storyboard */,
-				142B6EB11BF6CAF000BE7F13 /* Info.plist */,
+				14D7F99B1BF8E74800233D62 /* LoginController.swift */,
+				14D7F9991BF8E60A00233D62 /* Login.storyboard */,
+				14D7F99D1BF8F62200233D62 /* wkrStoryboard.storyboard */,
 				142B6EB91BF6CBDF00BE7F13 /* Bridge.h */,
 				142B6EC01BF7EDD900BE7F13 /* RailsRequest.swift */,
+				14D7F9981BF8DAC100233D62 /* System */,
 				142B6EB71BF6CB6F00BE7F13 /* EstimoteSDK.framework */,
 			);
 			path = WorkTracker;
+			sourceTree = "<group>";
+		};
+		14D7F9981BF8DAC100233D62 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				142B6EAC1BF6CAF000BE7F13 /* Assets.xcassets */,
+				142B6EAE1BF6CAF000BE7F13 /* LaunchScreen.storyboard */,
+				142B6EB11BF6CAF000BE7F13 /* Info.plist */,
+			);
+			name = System;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,9 +150,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14D7F99E1BF8F62200233D62 /* wkrStoryboard.storyboard in Resources */,
+				14D7F99A1BF8E60A00233D62 /* Login.storyboard in Resources */,
 				142B6EB01BF6CAF000BE7F13 /* LaunchScreen.storyboard in Resources */,
 				142B6EAD1BF6CAF000BE7F13 /* Assets.xcassets in Resources */,
-				142B6EAB1BF6CAF000BE7F13 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				142B6EA81BF6CAF000BE7F13 /* ViewController.swift in Sources */,
+				14D7F99C1BF8E74800233D62 /* LoginController.swift in Sources */,
 				142B6EA61BF6CAF000BE7F13 /* AppDelegate.swift in Sources */,
 				142B6EC11BF7EDD900BE7F13 /* RailsRequest.swift in Sources */,
 			);
@@ -158,14 +174,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		142B6EA91BF6CAF000BE7F13 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				142B6EAA1BF6CAF000BE7F13 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		142B6EAE1BF6CAF000BE7F13 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
